@@ -1,0 +1,829 @@
+/* Start of Font Family */
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family: Gilroy2;
+    src: url(./Fonts/Gilroy-Heavy.ttf);
+}
+@font-face {
+    font-family: Karla;
+    src: url(./Fonts/Karla-ExtraBold.ttf);
+}
+/* Ending of Font Family */
+/* Start of Boiler Point */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+/* End of Boiler Point */
+main{
+    width: 100%;
+    background-color: #171717;
+}
+.LandingPage{
+    padding: 0vw 6.25vw;
+    background-color: #D5FF3F;
+}
+/* Start of Navbar */
+nav{
+    font-family: Gilroy;
+    padding: 2.5vw 6.25vw;
+    display: flex;
+    flex: row;
+    background-color: #D5FF3F;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    font-size: 2.5vw;
+}
+nav svg{
+    display: none;
+}
+nav .part2{
+    display: flex;
+    flex-direction: row;
+    gap: 7vw;
+}
+nav .part2 a{
+    display: flex;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    letter-spacing: 0.05vw;
+}
+/* End of Navbar */
+/* Basic Setting of Landing Page */
+section{
+    font-family: Karla;
+}
+/* End Of Basic Setting of Landing Page */
+/* Start of Landing Page */
+.hero-text1{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.hero-text1 h1{
+    letter-spacing: -1vw;
+    font-size: 15vw;
+    margin-left: -1.1vw;
+    text-transform: uppercase;
+}
+.hero-text1 .vedio{
+    width: 29vw;
+    margin-left: 7.9vw;
+    margin-top: 3.1vw;
+    height: 6.5vw;
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    background-image: url(./Picture/photo-1733325600531-74f1899491a9.jpg);
+    background-position: center;
+}
+.hero-text1 .vedio .play{
+    width: 5vw;
+    height: 8vh;
+    border-radius: 3vw;
+    display: flex;
+    align-items: center;
+    border: 3px solid slategrey;
+    justify-content: center;
+    margin-left: 0.5vw;
+    background-color: rgb(0, 0, 0);
+}
+.hero-text2{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.5vw;
+}
+.hero-text2 h1{
+    letter-spacing: -1vw;
+    line-height: 6vw;
+    margin-left: -1.1vw;
+    font-weight: 900;
+    font-size: 15vw;
+    text-transform: uppercase;
+}
+.hero-text2 p{
+    font-family: Gilroy;
+    font-weight: 700;
+    margin-left: 16.5vw;
+    line-height: 3vw;
+    margin-top: -0.45vw;
+    display: flex;
+    justify-content: end;
+}
+.buttom{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding-bottom: 9vw;
+}
+.buttomleft{
+    display: flex;
+    flex-direction: row;
+    gap: 1.75vw;
+}
+.buttomleft button{
+    border: black 2px solid;
+    border-radius: 2.5vw;
+    display: flex;
+    opacity: 0.7;
+    align-items: center;
+    gap: 1vw;
+    font-family: Gilroy;
+    font-weight: 900;
+    background-color: #D5FF3F;
+    padding: 0.15vw 1.75vw;
+}
+.buttomright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.7;
+}
+.buttomright button{
+    display: none;
+}
+.buttomright hr{
+    width: 40vw;
+    height: 0.2vw;
+    opacity: 0.7;
+    background-color: black;
+    border: none;
+}
+.circle1{
+    width: 0.75vw;
+    height: 0.75vw;
+    background-color: black;
+    border-radius: 50%;
+}
+.circle2{
+    width: 0.75vw;
+    height: 0.75vw;
+    background-color: black;
+    border-radius: 50%;
+}
+.page1img{
+    width: 100%;
+    height: 60vh;
+    border-top-left-radius: 9vw;
+    border-top-right-radius: 9vw;
+    background-image: url(./Picture//abstract-3d-render-ballerina-curvy-extrusions-vivid-pastel-colors_685067-966_enhanced.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    position: relative;
+}
+.circle3{
+    position: absolute;
+    width: 12.5vw;
+    height: 12.5vw;
+    background-color: black;
+    border-radius: 50%;
+    top: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4.5px solid #252523;
+    right: 7.5%;
+}
+/* End of Landing Page */
+/* Start of Marquee Section */
+.MarqueeContainer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 2.5vw 0.5vw;
+}
+.movingtext{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: -0.35vw;
+    user-select: none;
+}
+.movingtext .text{
+    font-size: 4.2vw;
+    text-transform: uppercase;
+    color: #D5FF3F;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+ul{
+    display: flex;
+    gap: 5vw;
+}
+.movingtext ul{
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 2vw;
+    animation: scroll infinite 25s linear;
+    min-height: 100%;
+}
+@keyframes scroll {
+    to{
+        transform: translateX(-100%);
+    }
+}
+/* End of Marquee Section*/
+/* Start of Services Page */
+.ServicesContainer{
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 6.25vw;
+}
+.servicespart1 h1{
+    color: #C4C4C4;
+    text-transform: uppercase;
+    letter-spacing: -0.65vw;
+    font-size: 7.5vw;
+    margin-left: -0.25vw;
+    font-weight: 900;
+    padding-top: 5vw;
+}
+.servicespart1 h1 span{
+    font-size: 6.5vw;
+    color: #D5FF3F;
+}
+.servicespart1 p{
+    color: #3C3C3C;
+    font-family: Gilroy;
+    font-weight: 900;
+    font-size: 1.6vw;
+    justify-content: space-between;
+    width: fit-content;
+    line-height: 2.5vw;
+}
+.servicespart2{
+    padding-top: 8.9vw;
+    width: fit-content;
+}
+.servicespart2 button{
+    border: 1px solid #C4C4C4;
+    color: #C4C4C4;
+    width: fit-content;
+    background-color: #171717;
+    padding: 0.8vw 2vw; 
+    font-family: Gilroy;
+    font-weight: 900;
+    border-radius: 2vw;
+    font-size: 1.4vw;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75vw;
+}
+.servicespart2 button:hover{
+    color: white;
+    border:1px solid white;
+}
+.servicessection1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7vw;
+}
+.servicessection2{
+    padding-bottom: 8vw;
+}
+.ssp1inner{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #3C3C3C;
+    justify-content: space-between;
+    padding: 2vw 3.5vw;
+}
+.ssp1inner h1{
+    cursor: pointer;
+    font-size: 4.5vw;
+    font-family: Gilroy;
+    color: #3C3C3C;
+}
+.ssp1inner span{
+    cursor: pointer;
+    opacity: 0;
+    font-size: 7vw;
+    color: #D5FF3F;
+}
+.ssp1inner img{
+    cursor: pointer;
+    right: 15%;
+    top: -32.5%;
+    z-index: 99;
+    position: absolute;
+    display: none;
+    height: 18vw;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    width: 18vw;
+}
+.ssp1inner svg{
+    cursor: pointer;
+}
+.ssp1inner:hover svg{
+    transition: all ease-in-out 0.35s;
+    background-color: #D5FF3F;
+}
+.ssp1inner:hover{
+    background-color: #292929;
+    transition: all ease-in-out 0.35s;
+}
+.ssp1inner:hover h1{
+    color: #CACACA;
+    transition: all ease-in-out 0.35s;
+}
+.ssp1inner:hover img{
+    display: block;
+    transition: all ease-in-out 0.35s;
+}
+.ssp1inner:hover .innerspan1{
+    opacity: 1;
+    transition: all ease-in-out 0.35s;
+}
+.ssp2inner{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #3C3C3C;
+    justify-content: space-between;
+    padding: 2vw 3.5vw;
+}
+.ssp2inner h1{
+    cursor: pointer;
+    font-size: 4.5vw;
+    font-family: Gilroy;
+    color: #3C3C3C;
+}
+.ssp2inner span{
+    cursor: pointer;
+    opacity: 0;
+    font-size: 7vw;
+    color: #D5FF3F;
+}
+.ssp2inner img{
+    cursor: pointer;
+    right: 15%;
+    top: -32.5%;
+    display: none;
+    position: absolute;
+    height: 18vw;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    z-index: 99;
+    width: 18vw;
+}
+.ssp2inner svg{
+    cursor: pointer;
+}
+.ssp2inner:hover svg{
+    background-color: #D5FF3F;
+    transition: all ease-in-out 0.35s;
+}
+.ssp2inner:hover{
+    background-color: #292929;
+    transition: all ease-in-out 0.35s;
+}
+.ssp2inner:hover h1{
+    color: #CACACA;
+    transition: all ease-in-out 0.35s;
+}
+.ssp2inner:hover img{
+    display: block;
+    transition: all ease-in-out 0.35s;
+}
+.ssp2inner:hover .innerspan2{
+    opacity: 1;
+    transition: all ease-in-out 0.35s;
+}
+.ssp3inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #3C3C3C;
+    justify-content: space-between;
+    padding: 2vw 3.5vw;
+}
+.ssp3inner h1{
+    font-size: 4.5vw;
+    font-family: Gilroy;
+    color: #3C3C3C;
+}
+.ssp3inner span{
+    opacity: 0;
+    font-size: 7vw;
+    color: #D5FF3F;
+}
+.ssp3inner img{
+    right: 15%;
+    top: -32.5%;
+    position: absolute;
+    height: 18vw;
+    border-top-left-radius: 4vw;
+    z-index: 99;
+    display: none;
+    border-top-right-radius: 4vw;
+    width: 18vw;
+}
+.ssp3inner:hover svg{
+    background-color: #D5FF3F;
+    transition: all ease-in-out 0.35s;
+}
+.ssp3inner:hover{
+    background-color: #292929;
+    transition: all ease-in-out 0.35s;
+}
+.ssp3inner:hover h1{
+    color: #CACACA;
+    transition: all ease-in-out 0.35s;
+}
+.ssp3inner:hover img{
+    display: block;
+    transition: all ease-in-out 0.35s;
+}
+.ssp3inner:hover .innerspan3{
+    transition: all ease-in-out 0.35s;
+    opacity: 1;
+}
+.ssp4inner{
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-top: 1px solid #3C3C3C;
+    border-bottom: 1px solid #3C3C3C;
+    justify-content: space-between;
+    padding: 2vw 3.5vw;
+}
+.ssp4inner h1{
+    font-size: 4.5vw;
+    font-family: Gilroy;
+    color: #3C3C3C;
+}
+.ssp4inner span{
+    opacity: 0;
+    font-size: 7vw;
+    color: #D5FF3F;
+}
+.ssp4inner img{
+    right: 15%;
+    top: -32.5%;
+    position: absolute;
+    height: 18vw;
+    display: none;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    width: 18vw;
+}
+.ssp4inner:hover svg{
+    background-color: #D5FF3F;
+    transition: all ease-in-out 0.35s;
+}
+.ssp4inner:hover{
+    background-color: #292929;
+    transition: all ease-in-out 0.35s;
+}
+.ssp4inner:hover h1{
+    color: #CACACA;
+    transition: all ease-in-out 0.35s;
+}
+.ssp4inner:hover img{
+    display: block;
+    transition: all ease-in-out 0.35s;
+}
+.ssp4inner:hover .innerspan4{
+    opacity: 1;
+    transition: all ease-in-out 0.35s;
+}
+.servicessection3{
+    color: #CACACA;
+    padding: 8vw 10vw;
+    background-color: #292929;
+    display: flex;
+}
+.servicessec3part1 h1{
+    font-size: 6.35vw;
+    font-family: Gilroy;
+    font-weight: 400;
+    line-height: 6.5vw;
+    align-items: center;
+    letter-spacing: -0.35vw;
+    text-transform: uppercase;
+    display: flex;
+}
+.servicessec3part1 h3{
+    font-size: 6.69vw;
+    font-family: Gilroy;
+    font-weight: 350;
+    align-items: center;
+    line-height: 6.5vw;
+    letter-spacing: -0.35vw;
+    text-transform: uppercase;
+    display: flex;
+}
+.servicessec3part1 h4{
+    font-size: 6.77vw;
+    line-height: 6.5vw;
+    font-family: Gilroy;
+    font-weight: 350;
+    align-items: center;
+    letter-spacing: -0.35vw;
+    text-transform: uppercase;
+    display: flex;
+}
+.servicessec3part1 h5{
+    font-size: 6.88vw;
+    font-family: Gilroy;
+    line-height: 6.5vw;
+    font-weight: 350;
+    align-items: center;
+    letter-spacing: -0.35vw;
+    text-transform: uppercase;
+    display: flex;
+}
+.ss3h1{
+    width: 16.75vw;
+    height: 4.75vw;
+    background-image: url(./Picture/bhautik-patel-bhJxduhl2sI-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+    border-radius: 2.5vw;
+}
+.ss3h12{
+    width: 6.5vw;
+    height: 4.5vw;
+    background-image: url(./Picture/philip-oroni-0Nh06vUjbLw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2.5vw;
+}
+.ss3svg{
+    width: 5.5vw;
+    height: 4.5vw;
+    background-color: #D5FF3F;
+    border-radius: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ss3h123{
+    width: 9vw;
+    height: 4.5vw;
+    background-image: url(./Picture/steve-johnson-Yyb10fO2BjQ-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 2.5vw;
+}
+/* End of Services Page */
+/* Start of Best Project */
+.BestProject{
+    padding: 0vw 6.25vw;
+    padding-top: 8vw;
+    background-color: #171717;
+}
+.bpsec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bps1s1 h1{
+    font-size: 6.25vw;
+    word-spacing: -0.5vw;
+    text-transform: uppercase;
+    letter-spacing: -0.5vw;
+    color: #C4C4C4;
+}
+.bps1s1 h1 span{
+    color: #D5FF3F;
+}
+.bps1s2 p{
+    font-size: 1.8vw;
+    font-family: Gilroy;
+    color: #3C3C3C;
+}
+.bpsec2{
+    padding-top: 1.25vw;
+    padding-bottom: 3vw;
+}
+.bpsec2 button{
+    border: 1px solid #C4C4C4;
+    color: #C4C4C4;
+    width: fit-content;
+    background-color: #171717;
+    padding: 0.8vw 2vw; 
+    font-family: Gilroy;
+    font-weight: 900;
+    border-radius: 2vw;
+    font-size: 1.4vw;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75vw;
+}
+.bpsec2 button:hover{
+    color: white;
+    border:1px solid white;
+}
+.bpsec3{
+    padding-bottom: 8.5vw;
+}
+.bps3s1{
+    display: flex;
+}
+.bps3s2{
+    display: flex;
+}
+.lastimg{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-image: url(./Picture/geordanna-cordero-5NE6mX0WVfQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: #CACACA;
+    border-bottom-right-radius: 6vw;
+}
+.lastimg svg{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background: #D5FF3F;
+    opacity: 0;
+}
+.lastimg p{
+    opacity: 0;
+    padding-top: 13vw;
+    padding-left: 2.3vw;
+    padding-bottom: 0.5vw;
+    font-family: Gilroy;
+    font-weight: 600;
+    color: #ffffff;
+}
+.lastimg h1{
+    opacity: 0;
+    padding-left: 2.3vw;
+    font-size: 3.5vw;
+    color: #ffffff;
+    font-family: Gilroy;
+    line-height: 3.5vw;
+}
+.lastimg:hover{
+    filter: opacity(0.8);
+}
+.lastimg:hover svg{
+    opacity: 1;
+    transition: all ease-in-out 0.25s;
+}
+.lastimg:hover p{
+    opacity: 1;
+    transition: all ease-in-out 0.25s;
+}
+.lastimg:hover h1{
+    opacity: 1;
+    transition: all ease-in-out 0.25s;
+}
+.bpsec4{
+    background-color: #D5FF3F;
+    height: 38vw;
+    border-bottom-right-radius: 9vw;
+    border-bottom-left-radius: 9vw;
+}
+.bps4p1{
+    padding-top: 6.5vw;
+    opacity: 0.3;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.bps4p1line1{
+    display: flex;
+    align-items: center;
+}
+.bps4p1line1 hr{
+    border: none;
+    height: 2px;
+    background-color: #171717;
+}
+.bps4circle1{
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #171717;
+}
+.bps4circle2{
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #171717;
+}
+.bps4hr1{
+    width: 25vw;
+}
+.bps4svg{
+    display: flex;
+    gap: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.bps4p1line2{
+    display: flex;
+    align-items: center;
+}
+.bps4p1line2 hr{
+    border: none;
+    height: 2px;
+    background-color: #171717;
+}
+.bps4circle3{
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #171717;
+}
+.bps4hr2{
+    width: 25vw;
+}
+.bps4circle4{
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #171717;
+}
+.bps4p2{
+    text-align: center;
+    padding-top: 3.5vw;
+}
+.bps4p2 h1{
+    font-size: 6.25vw;
+    text-transform: uppercase;
+    font-family: Gilroy2;
+    line-height: 5.5vw;
+    font-weight: 900;
+}
+.bps4p3{
+    display: flex;
+    padding-top: 4.5vw;
+    justify-content: center;
+    gap: 2vw;
+}
+.bps4p3 button{
+    padding: 1vw 3vw;
+    text-transform: uppercase;
+    font-family: Gilroy;
+    font-weight: 900;
+    letter-spacing: 0.05vw;
+    border-radius: 2vw;
+    border: 2px solid black;
+    background-color: #D5FF3F;
+}
+.bps4p3 .first{
+    background-color: black;
+    color: #D5FF3F;
+}
+/* End of Best Project */
+/* Start of Footer */
+footer{
+    background-color: #171717;
+    padding: 0vw 6.25vw;
+    padding-top: 4.5vw;
+}
+.fpart1 h1{
+    text-align: center;
+    font-size: 4.25vw;
+    color: #D5FF3F;
+    font-family: Gilroy;
+}
+.fpart2{
+    padding-bottom: 2vw;
+    padding-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fpart2 p{
+    font-family: Gilroy;
+    color: #D5FF3F;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* End of Footer */
+/* Start on Responsive Design 320 px */
+
+/* End on Responsive Design 320 px */
